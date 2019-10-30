@@ -1,0 +1,117 @@
+
+.contenedor {
+	width: 100%;
+	max-width:1400px;
+	margin:auto;
+}
+ 
+.contenedor p {
+	margin-bottom:40px;
+}
+ 
+ .logo, .icon-menu{
+	margin: 5px;
+	color: #66050D ;
+}
+.icon-menu{
+	display: block;
+	width: 40px;
+	height: 40px;
+	font-size: 30px;
+	background: #262626;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 5px; 
+	margin-left: auto;
+	cursor: pointer;
+}
+.nav{
+	position: absolute;
+	top: 60px;
+	left: -100%;
+	width: 100%;
+	transition: all 0.4s;
+}
+.menu{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.menu_link{
+	display: block;
+	padding: 15px;
+	background: #FBA919;
+	text-decoration: none;
+	color: #fff;
+}
+.menu_link:hover, .select{
+	background: white;
+	color: #FBA919;
+}
+.mostrar{
+	left: 0;
+}
+
+header nav {
+	background:#9A9CA6;
+	margin-bottom:10px;
+	align-items: center;
+}
+ 
+header nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+ 
+header nav ul li {
+	float: left;
+}
+ 
+header nav ul li a {
+	display: block;
+	padding:30px;
+	color:white;
+	text-align: center;
+	text-decoration: none;
+	width: 140px;
+}
+ 
+header nav ul li a:hover {
+	background:#CFD2DF;
+}
+ 
+ 
+/* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.menu-fixed {
+	position:fixed;
+	z-index:1400;
+	top:0;
+	max-width:1400px;
+	width:100%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+.col-lg-10 col-md-9 col-12 body_block  align-content-center{
+	background: url('img/ediciones/2015/fondo.jpg');
+}
+@media(min-width: 1024px){
+	.contenedor{
+		width: 1000px;
+	}
+	.section_titulo{
+		font-size: 50px;
+		margin: 30px 0;
+	}
+	.nav{
+		position: static;
+		width: auto;
+	}
+	.menu{
+		display: flex;
+	}
+	.icon-menu{
+		display: none;
+	}
+	.menu_link{
+		background: none;
+		font-size: 20px;
+	}
